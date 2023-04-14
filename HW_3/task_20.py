@@ -39,7 +39,7 @@ d = [{'1': 'A, E, I, O, U, L, N, S, T, R'},
 k = 0
 for i in w:
     for j in d:
-        if i in str(*j.values()):
+        if i.lower() in str(*j.values()).lower():
             k += int(*j.keys())
 
 print(f"{k} - стоимость введенного слова")
