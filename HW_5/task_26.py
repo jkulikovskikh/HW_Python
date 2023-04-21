@@ -3,9 +3,7 @@
 # помощью рекурсии.
 
 def pow_a_in_b(a, b):
-    if b - 1 == 0:
-        return a
-    elif b == 0:
+    if b == 0:
         return 1
     return pow_a_in_b(a, b - 1) * a
 
